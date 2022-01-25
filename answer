@@ -1,0 +1,17 @@
+Условный программист допустил следующие ошибки:
+1. Использовал  if (age < 19), исключая тинейджеров 19ти лет
+2. Забыл ограничить нижний порог тинейджеров if (age >= 13)
+
+Правильный код:
+    public static boolean isTeenager(int age)
+    {
+        boolean result;
+        if (age <= 19 && age >= 13) {
+            result = true;
+        }
+        else {
+            result = false;
+        }
+        return result;
+    }
+}
